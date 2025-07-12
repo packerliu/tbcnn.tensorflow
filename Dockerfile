@@ -20,3 +20,12 @@ RUN pip install -r requirements.txt
 # Command to run when the container starts
 # This will execute your Python script
 #CMD ["python", "your_script.py"]
+
+# to build container and run it, use following:
+#  docker build -t tbcnn .
+#  docker run --rm --name tb -it dabg/tbcnn
+# if you left the above container without exiting it, you might get back by:
+#  docker exec -it tb
+# Once you get into docker container with TF2.11.1 installed, 
+# you can start running scripts at 
+# https://github.com/bdqnghi/tbcnn.tensorflow?tab=readme-ov-file#data-preparation
